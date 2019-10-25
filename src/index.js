@@ -337,6 +337,8 @@ class Plyr extends Component {
   // For video support for source defined as link to those video files.
   renderPlayerWithSRC = () => {
     const { sources, url, preload, poster, tracks, ...rest } = this.props;
+    const plyrStorage = JSON.parse(localStorage.getItem('plyr'));
+    const quality = (plyrStorage && String(plyrStorage.quality)) || '720';
 
     const captionsMap = tracks.map((source, index) => {
       const {
@@ -364,10 +366,13 @@ class Plyr extends Component {
     });
 
     if (sources && Array.isArray(sources) && sources.length) {
+      const defaultSrc = (sources.find((source) => source.size === quality)).src || sources[0].src;
+
       return (
         <video
           preload={preload}
           poster={poster}
+          src={defaultSrc}
           ref={this.elementRef}
           {...pick(rest, this.restProps)}
         >
