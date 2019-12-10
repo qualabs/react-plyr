@@ -11,6 +11,9 @@
     "url": "https://github.com/Rocketseat/react-plyr.git"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Jose Miguel Bejarano",
   "contributors": [
     "Jose Miguel Bejarano <yo@josemiguel.org>",
