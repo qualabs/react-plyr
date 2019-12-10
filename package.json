@@ -2,13 +2,13 @@
   "name": "@rocketseat/react-plyr",
   "version": "2.2.1",
   "description": "A simple, accessible HTML5 media player React Component",
-  "homepage": "https://github.com/xDae/react-plyr",
+  "homepage": "https://github.com/Rocketseat/react-plyr",
   "bugs": {
-    "url": "https://github.com/xDae/react-plyr/issues"
+    "url": "https://github.com/Rocketseat/react-plyr/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xDae/react-plyr.git"
+    "url": "https://github.com/Rocketseat/react-plyr.git"
   },
   "license": "MIT",
   "author": "Jose Miguel Bejarano",
