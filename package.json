@@ -1,6 +1,6 @@
 {
   "name": "@rocketseat/react-plyr",
-  "version": "2.2.1",
+  "version": "1.0.0",
   "description": "A simple, accessible HTML5 media player React Component",
   "homepage": "https://github.com/Rocketseat/react-plyr",
   "bugs": {
