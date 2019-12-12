@@ -338,7 +338,9 @@ class Plyr extends Component {
   renderPlayerWithSRC = () => {
     const { sources, url, preload, poster, tracks, ...rest } = this.props;
     const plyrStorage = JSON.parse(localStorage.getItem('plyr'));
-    const quality = (plyrStorage && String(plyrStorage.quality)) || '720';
+    const quality =
+      (plyrStorage && plyrStorage.quality && String(plyrStorage.quality)) ||
+      '720';
 
     const captionsMap = tracks.map((source, index) => {
       const {
